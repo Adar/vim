@@ -1,7 +1,7 @@
 "Vim color file tailored legibility on black background.
 "Maintainer:    John Rhee  <jrhee75@gmail.com>
 "Last Change:   2005/10/18  v0.1
-set background=dark
+set background=light
 hi clear
 if exists("syntax_on")
     syntax reset
