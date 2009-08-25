@@ -4,8 +4,8 @@ set nocompatible
 set encoding=utf-8
 set fileencoding=
 setglobal fileencoding=utf-8
-"set fileencodings=ucs-bom,utf-8,latin1
-set termencoding=utf-8
+set fileencodings=ucs-bom,utf-8,latin1
+" set termencoding=utf-8
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -20,7 +20,9 @@ set shiftwidth=4
 set softtabstop=4
 set formatoptions=qroct
 set autoindent
-set bg=dark
+set bg=light
+"set nonumber number
+set noswf
 colorscheme icansee
 
 let php_sql_query = 1
@@ -112,7 +114,7 @@ iab     _dhdr   /**<CR>DEFINE<CR><CR>@author Christian Senkowski <c.senkowski@ko
 iab     _ghdr   /**<CR>GLOBAL<CR><CR>@author Christian Senkowski <c.senkowski@kon.de><CR>@since <C-R>=strftime("%Y%m%d %H:%M")<CR><CR>/<ESC>kkkk$6h
 iab     _chdr   /**<CR>Klassendefinition<CR><CR>@package<CR>@subpackage<CR>@author Christian Senkowski <c.senkowski@kon.de><CR>@since <C-R>=strftime("%Y%m%d %H:%M")<CR><CR>/<ESC>kkkk$10h
 iab     _mhdr   /**<CR>Klassenmethode<CR><CR>@param<CR>@return<CR>@author Christian Senkowski <c.senkowski@kon.de><CR>@since <C-R>=strftime("%Y%m%d %H:%M")<CR><CR>/<ESC>kkkkkk$14h
-iab     _ahdr   /**<CR>Klassenattribut<CR>@var <CR>/<ESC>k$10h
+iab     _ahdr   /**<CR>Klassenattribut<CR>@var<CR><CR>/<ESC>kkkkk$15h         
 iab     _fhdr   /**<CR>funktionsbasierte Dokumentation<CR><CR>@param<CR>@return<CR>@author Christian Senkowski <c.senkowski@kon.de><CR>@since <C-R>=strftime("%Y%m%d %H:%M")<CR><CR>/<ESC>kkkkkk$31h
 iab     _todo   # @todo (chris) :<ESC>
 iab     _uuml   &#252;<ESC>
@@ -123,6 +125,5 @@ iab     _Uuml   &#220;<ESC>
 iab     _Auml   &#196;<ESC>
 iab     _Ouml   &#214;<ESC>
 iab     _nbsp   &#160;<ESC>
-iab     _amp    &#38;<ESC>
 
 source ~/.vim/ftplugin/php_template.vim
