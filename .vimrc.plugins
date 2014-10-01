@@ -1,0 +1,6 @@
+nmap <F8> :TagbarToggle<CR>
+map <F5> <Esc>:EnableFastPHPFolds<Cr>
+map <F6> <Esc>:EnablePHPFolds<Cr>
+map <F7> <Esc>:DisablePHPFolds<Cr> 
+nmap zz zo
+nmap zt zc
