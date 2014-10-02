@@ -5,4 +5,9 @@
  * @see {{name}}{{/parent}}{{#abstract}}
  * @abstract{{/abstract}}{{#final}}
  * @final{{/final}}
+ *
+ * @package 
+ * @subpackage 
+ * @since 
+ * @author =author
  */

@@ -79,6 +79,8 @@ set noswf
     Plugin 'itchyny/lightline.vim'
     Plugin 'bling/vim-bufferline'
 
+    Plugin 'sickill/vim-pasta'
+
     " Glorious colorscheme
     Plugin 'nanotech/jellybeans.vim'
 
