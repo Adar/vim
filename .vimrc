@@ -62,18 +62,19 @@ set noswf
         endif
     """ }}}
 
-    " Edit files using sudo/su
-    " Plugin 'chrisbra/SudoEdit.vim'
-
     Plugin 'https://github.com/vim-scripts/phpfolding.vim'
 
     " <Tab> everything!
     Plugin 'ervandew/supertab'
 
+    " PhpDoc
     Bundle 'tobyS/pdv'
 
     " Fuzzy finder (files, mru, etc)
     Plugin 'kien/ctrlp.vim'
+
+    " Templates
+    Plugin 'php_template'
 
     " A pretty statusline, bufferline integration
     Plugin 'itchyny/lightline.vim'
@@ -89,7 +90,7 @@ set noswf
     Plugin 'scrooloose/nerdcommenter'
 
     " Autoclose (, " etc
-    Plugin 'Townk/vim-autoclose'
+    "Plugin 'Townk/vim-autoclose'
 
     " Git wrapper inside Vim
     Plugin 'tpope/vim-fugitive'
