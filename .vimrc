@@ -69,19 +69,15 @@ set noswf
 
     " PhpDoc
     Bundle 'tobyS/pdv'
+    Plugin 'SirVer/ultisnips'
+    Plugin 'https://github.com/tobyS/vmustache'
 
-    " Fuzzy finder (files, mru, etc)
-    Plugin 'kien/ctrlp.vim'
-
-    " Templates
-    Plugin 'php_template'
+    " Autoclose
+    Plugin 'Townk/vim-autoclose'
 
     " A pretty statusline, bufferline integration
     Plugin 'itchyny/lightline.vim'
     Plugin 'bling/vim-bufferline'
-
-    " Easy... motions... yeah.
-    Plugin 'Lokaltog/vim-easymotion'
 
     " Glorious colorscheme
     Plugin 'nanotech/jellybeans.vim'
@@ -420,7 +416,7 @@ set noswf
             \     'left': [
             \         ['mode', 'paste'],
             \         ['readonly', 'fugitive'],
-            \         ['ctrlpmark', 'bufferline']
+            \         ['bufferline']
             \     ],
             \     'right': [
             \         ['lineinfo'],
@@ -435,7 +431,6 @@ set noswf
             \     'mode'         : 'MyMode',
             \     'fugitive'     : 'MyFugitive',
             \     'readonly'     : 'MyReadonly',
-            \     'ctrlpmark'    : 'CtrlPMark',
             \     'bufferline'   : 'MyBufferline',
             \     'fileformat'   : 'MyFileformat',
             \     'fileencoding' : 'MyFileencoding',
@@ -488,16 +483,6 @@ set noswf
             return &ft !~? 'help' && &readonly ? '≠' : '' " or ⭤
         endfunction
 
-        function! CtrlPMark()
-            if expand('%:t') =~ 'ControlP'
-                call lightline#link('iR'[g:lightline.ctrlp_regex])
-                return lightline#concatenate([g:lightline.ctrlp_prev, g:lightline.ctrlp_item
-                    \ , g:lightline.ctrlp_next], 0)
-            else
-                return ''
-            endif
-        endfunction
-
         function! MyBufferline()
             call bufferline#refresh_status()
             let b = g:bufferline_status_info.before
@@ -529,23 +514,6 @@ set noswf
             return winwidth('.') > 70 ? (strlen(&filetype) ? &filetype : 'no ft') : ''
         endfunction
 
-        let g:ctrlp_status_func = {
-            \ 'main': 'CtrlPStatusFunc_1',
-            \ 'prog': 'CtrlPStatusFunc_2',
-            \ }
-
-        function! CtrlPStatusFunc_1(focus, byfname, regex, prev, item, next, marked)
-            let g:lightline.ctrlp_regex = a:regex
-            let g:lightline.ctrlp_prev = a:prev
-            let g:lightline.ctrlp_item = a:item
-            let g:lightline.ctrlp_next = a:next
-            return lightline#statusline(0)
-        endfunction
-
-        function! CtrlPStatusFunc_2(str)
-            return lightline#statusline(0)
-        endfunction
-
         let g:tagbar_status_func = 'TagbarStatusFunc'
 
         function! TagbarStatusFunc(current, sort, fname, ...) abort
@@ -562,23 +530,6 @@ set noswf
             call lightline#update()
         endfunction
     """ }}}
-
-    " Startify, the fancy start page
-    let g:ctrlp_reuse_window = 'startify' " don't split in startify
-    let g:startify_bookmarks = [
-        \ $HOME . "/.vimrc", $HOME . "/.vimrc.first",
-        \ $HOME . "/.vimrc.last", $HOME . "/.vimrc.plugins"
-        \ ]
-    let g:startify_custom_header = [
-        \ '   Author:      Tim Sæterøy',
-        \ '   Homepage:    http://thevoid.no',
-        \ '   Source:      http://github.com/timss/vimconf',
-        \ ''
-        \ ]
-
-    " CtrlP - don't recalculate files on start (slow)
-    let g:ctrlp_clear_cache_on_exit = 0
-    let g:ctrlp_working_path_mode = 'ra'
 
     " TagBar
     let g:tagbar_left = 0
