@@ -68,12 +68,10 @@ set noswf
     Plugin 'ervandew/supertab'
 
     " PhpDoc
-    Bundle 'tobyS/pdv'
+    "Bundle 'tobyS/pdv'
+    Plugin 'mikehaertl/pdv-standalone'
     Plugin 'SirVer/ultisnips'
     Plugin 'https://github.com/tobyS/vmustache'
-
-    " Autoclose
-    Plugin 'Townk/vim-autoclose'
 
     " A pretty statusline, bufferline integration
     Plugin 'itchyny/lightline.vim'
@@ -94,7 +92,7 @@ set noswf
     Plugin 'tpope/vim-fugitive'
 
     " Handle surround chars like ''
-    Plugin 'tpope/vim-surround'
+    "Plugin 'tpope/vim-surround'
 
     " Align your = etc.
     " Plugin 'vim-scripts/Align'
@@ -106,7 +104,7 @@ set noswf
     Plugin 'garbas/vim-snipmate'
 
     " A fancy start screen, shows MRU etc.
-    Plugin 'mhinz/vim-startify'
+    "Plugin 'mhinz/vim-startify'
 
     " Vim signs (:h signs) for modified lines based off VCS (e.g. Git)
     Plugin 'mhinz/vim-signify'
