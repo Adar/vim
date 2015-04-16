@@ -139,9 +139,11 @@ set noswf
         syntax on                                   " syntax highlighting
         set background=dark                         " we're using a dark bg
         colors jellybeans                           " select colorscheme
-        au BufNewFile,BufRead *.txt se ft=sh tw=79  " opens .txt w/highlight
+        au BufNewFile,BufRead *.txt se ft=sh tw=0  " opens .txt w/highlight
+        au BufNewFile,BufRead *.ini se ft=sh tw=0  " opens .txt w/highlight
         au BufNewFile,BufRead *.tex se ft=tex tw=79 " we don't want plaintex
         au BufNewFile,BufRead *.md se ft=markdown tw=79 " markdown, not modula
+        au BufNewFile,BufRead *.java se ft=markdown tw=0 " java
         """ 256 colors for maximum jellybeans bling. See commit log for info {{{
             if (&term =~ "xterm") || (&term =~ "screen")
                 set t_Co=256
