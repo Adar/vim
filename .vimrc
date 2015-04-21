@@ -29,6 +29,11 @@ set bg=light
 "set nonumber number
 set noswf
 
+if &diff
+    " diff mode
+    set diffopt+=iwhite
+endif
+
 """ Automatically make needed files and folders on first run
 """ If you don't run *nix you're on your own (as in remove this) {{{
     call system("mkdir -p $HOME/.vim/{plugin,undo}")
