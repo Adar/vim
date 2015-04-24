@@ -62,16 +62,16 @@ set noswf
         endif
     """ }}}
 
-    Plugin 'https://github.com/vim-scripts/phpfolding.vim'
+    "Plugin 'https://github.com/vim-scripts/phpfolding.vim'
 
     " <Tab> everything!
     Plugin 'ervandew/supertab'
 
     " PhpDoc
     "Bundle 'tobyS/pdv'
-    Plugin 'mikehaertl/pdv-standalone'
-    Plugin 'SirVer/ultisnips'
-    Plugin 'https://github.com/tobyS/vmustache'
+    "Plugin 'mikehaertl/pdv-standalone'
+    "Plugin 'SirVer/ultisnips'
+    "Plugin 'https://github.com/tobyS/vmustache'
 
     " A pretty statusline, bufferline integration
     Plugin 'itchyny/lightline.vim'
