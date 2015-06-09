@@ -148,7 +148,7 @@ endif
         au BufNewFile,BufRead *.ini se ft=sh tw=0  " opens .txt w/highlight
         au BufNewFile,BufRead *.tex se ft=tex tw=79 " we don't want plaintex
         au BufNewFile,BufRead *.md se ft=markdown tw=79 " markdown, not modula
-        au BufNewFile,BufRead *.java se ft=markdown tw=0 " java
+        au BufNewFile,BufRead *.java se ft=markdown tw=0 syn=java " java
         """ 256 colors for maximum jellybeans bling. See commit log for info {{{
             if (&term =~ "xterm") || (&term =~ "screen")
                 set t_Co=256
