@@ -122,6 +122,8 @@ endif
     " REQUIREMENTS: (exuberant)-ctags
     Plugin 'majutsushi/tagbar'
 
+    Plugin 'fatih/vim-go'
+
     " Finish Vundle stuff
     call vundle#end()
 
@@ -278,6 +280,8 @@ endif
     """ General {{{
         " Remap <leader>
         let mapleader=","
+        "let g:vim_markdown_folding_disabled=1
+
 
         " Quickly edit/source .vimrc
         noremap <leader>ve :edit $HOME/.vimrc<CR>
