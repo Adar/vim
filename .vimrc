@@ -294,8 +294,8 @@ endif
         nmap <silent> <leader>w :set invwrap<CR>:set wrap?<CR>
 
         " Toggle folding
-        "nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-        "vnoremap <Space> zf
+        nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+        vnoremap <Space> zf
 
         " Bubbling (bracket matching)
         nmap <C-up> [e

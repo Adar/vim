@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/chris/private_git/jwebsockets3'
-let g:netrw_dirhist_2='/Users/chris/private_git/archetypes/spring-wicket-bootstrap-start/src/main/java/de/webplatz'
-let g:netrw_dirhist_3='/Users/chris/private_git/archetypes/spring-wicket-bootstrap-start/src/main/java/de/webplatz/wpconfig'
-let g:netrw_dirhist_4='/Users/chris/.vim'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/chris/.subversion/auth'
+let g:netrw_dirhist_2='/Users/chris/.subversion/auth/svn.ssl.server'
+let g:netrw_dirhist_3='/Users/chris/.subversion/auth'
+let g:netrw_dirhist_4='/Users/chris/.subversion/auth/svn.simple'
+let g:netrw_dirhist_5='/Users/chris/.subversion/auth'
+let g:netrw_dirhist_6='/Users/chris/.subversion/auth/svn.ssl.client-passphrase'

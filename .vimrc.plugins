@@ -1,3 +1,3 @@
 nmap <F8> :TagbarToggle<CR>
-nmap zz zo
-nmap zt zc
+"nmap zz zo
+"nmap zt zc
