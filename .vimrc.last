@@ -1,5 +1,7 @@
 set nonumber
 
+nmap sp :set paste<CR>i
+
 ab     _ts     <C-R>=strftime("%Y%m%d %H:%M")<CR>
 ab     _td     <C-R>=strftime("%Y%m%d")<CR>
 ab     _tsu    <C-R>=strftime("%Y%m%d %H:%M")<CR><CR><ESC>!!echo -n "$LOGNAME"<CR><ESC>kJA

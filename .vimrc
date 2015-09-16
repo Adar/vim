@@ -59,6 +59,7 @@ endif
         call vundle#begin()                         " init vundle
     """ }}}
     """ Github repos, uncomment to disable a plugin {{{
+    " Plugin manager
     Plugin 'gmarik/Vundle.vim'
 
     """ Local plugins (and only plugins in this file!) {{{{
@@ -67,21 +68,14 @@ endif
         endif
     """ }}}
 
-    "Plugin 'https://github.com/vim-scripts/phpfolding.vim'
-
     " <Tab> everything!
     Plugin 'ervandew/supertab'
-
-    " PhpDoc
-    "Bundle 'tobyS/pdv'
-    "Plugin 'mikehaertl/pdv-standalone'
-    "Plugin 'SirVer/ultisnips'
-    "Plugin 'https://github.com/tobyS/vmustache'
 
     " A pretty statusline, bufferline integration
     Plugin 'itchyny/lightline.vim'
     Plugin 'bling/vim-bufferline'
 
+    " paste helper
     Plugin 'sickill/vim-pasta'
 
     " Glorious colorscheme
@@ -90,29 +84,21 @@ endif
     " Super easy commenting, toggle comments etc
     Plugin 'scrooloose/nerdcommenter'
 
-    " Autoclose (, " etc
-    "Plugin 'Townk/vim-autoclose'
-
     " Git wrapper inside Vim
+    " Provides Gdiff etc
     Plugin 'tpope/vim-fugitive'
 
-    " Handle surround chars like ''
-    "Plugin 'tpope/vim-surround'
-
-    " Align your = etc.
-    " Plugin 'vim-scripts/Align'
-
     " Snippets like textmate
-    Plugin 'MarcWeber/vim-addon-mw-utils'
-    Plugin 'tomtom/tlib_vim'
-    Plugin 'honza/vim-snippets'
-    Plugin 'garbas/vim-snipmate'
+"    Plugin 'MarcWeber/vim-addon-mw-utils'
+ "   Plugin 'tomtom/tlib_vim'
+  "  Plugin 'honza/vim-snippets'
+   " Plugin 'garbas/vim-snipmate'
 
     " A fancy start screen, shows MRU etc.
-    "Plugin 'mhinz/vim-startify'
+    Plugin 'mhinz/vim-startify'
 
-    " Vim signs (:h signs) for modified lines based off VCS (e.g. Git)
-    Plugin 'mhinz/vim-signify'
+    " Git status display
+    Plugin 'airblade/vim-gitgutter'
 
     " Awesome syntax checker.
     " REQUIREMENTS: See :h syntastic-intro
@@ -120,8 +106,10 @@ endif
 
     " Functions, class data etc.
     " REQUIREMENTS: (exuberant)-ctags
+    " F8 for functions etc
     Plugin 'majutsushi/tagbar'
 
+    " Go indenter and checker
     Plugin 'fatih/vim-go'
 
     " Finish Vundle stuff

@@ -1,8 +1,8 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/chris/.subversion/auth'
-let g:netrw_dirhist_2='/Users/chris/.subversion/auth/svn.ssl.server'
-let g:netrw_dirhist_3='/Users/chris/.subversion/auth'
-let g:netrw_dirhist_4='/Users/chris/.subversion/auth/svn.simple'
-let g:netrw_dirhist_5='/Users/chris/.subversion/auth'
-let g:netrw_dirhist_6='/Users/chris/.subversion/auth/svn.ssl.client-passphrase'
+let g:netrw_dirhist_1='/Users/chris/mondia/mumbrei/emailwidget-trunk/src/main/config/templates/callya_shop'
+let g:netrw_dirhist_2='/Users/chris/mondia/mumbrei/emailwidget-trunk/src/main/config/templates/ewetel'
+let g:netrw_dirhist_3='/Users/chris/mondia/mumbrei/emailwidget-trunk/src/main/config/templates/vodafone'
+let g:netrw_dirhist_4='/Users/chris/mondia/mumbrei/emailwidget-trunk/src/main/config/templates/vodafone_nonTouch'
+let g:netrw_dirhist_5='/Users/chris/test'
+let g:netrw_dirhist_6='/Users/chris/private_git/applescript'
