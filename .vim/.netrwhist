@@ -1,2 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/etc/nginx/conf.d'
+let g:netrw_dirhist_2='/etc/nginx/conf.d/adar'
+let g:netrw_dirhist_3='/etc/nginx/conf.d'
+let g:netrw_dirhist_4='/etc/nginx/conf.d/adar'
+let g:netrw_dirhist_5='/etc/nginx/conf.d/adar/e-cs.co'
+let g:netrw_dirhist_6='/home/adar/git/gitolite-admin/conf'
