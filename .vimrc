@@ -25,8 +25,9 @@ set shiftwidth=4
 set softtabstop=4
 set formatoptions=qroct
 set autoindent
-set bg=light
+set bg=dark
 "set nonumber number
+"set cm=blowfish2
 set noswf
 
 if &diff
